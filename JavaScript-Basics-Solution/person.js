@@ -5,3 +5,5 @@ let person = {
 };
 
 console.log(person.firstName);
+
+//Object created with firstName, lastName and age as properties

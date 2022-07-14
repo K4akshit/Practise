@@ -31,6 +31,7 @@ class MetadataParser{
 
     //reduce function r = accumulator , a = current value;
     groupObjectsBy(ex,key){
+        //const ex = JSON.parse(exe);
        var res = ex.reduce(function (r,a){
             r[a[key]] = r[a[key]] || [];
             r[a[key]].push(a);
@@ -42,7 +43,7 @@ class MetadataParser{
     
 }
 
-/* [{
+ const ju = [{
     "channel": "A",
     "name": "shoe"
   },
@@ -58,8 +59,7 @@ class MetadataParser{
     "channel": "C",
     "name": "electronics"
   }
-]
-*/
+];
 
 const pp = new MetadataParser();
 
@@ -86,7 +86,7 @@ let ex = [
     }
   ];
 
-console.log(pp.groupObjectsBy(ex,'channel'));
+console.log(pp.groupObjectsBy(ju,'channel'));
 
 
 

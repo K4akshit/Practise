@@ -27,7 +27,7 @@ res.end();
 
 //this is the stream saving part
 var buffStream = fs.createWriteStream('buff.txt');
-var res1 = http.request(options,(res)=>{
+var resBuff = http.request(options,(res)=>{
     res.on('data',(data)=>{
         buffStream.write(data);
     })
@@ -37,6 +37,4 @@ var res1 = http.request(options,(res)=>{
     })
 })
 
-
-
-res1.end();
+resBuff.end();

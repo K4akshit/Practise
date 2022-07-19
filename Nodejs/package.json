@@ -1,0 +1,21 @@
+{
+  "name": "practise",
+  "version": "1.0.0",
+  "description": "solutions of the assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "k4akshit"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "akshit",
+  "license": "ISC",
+  "dependencies": {
+    "xml2js": "^0.4.23"
+  }
+}
